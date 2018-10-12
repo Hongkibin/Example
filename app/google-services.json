@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "358457289217",
+    "firebase_url": "https://cosmetic1-797cf.firebaseio.com",
+    "project_id": "cosmetic1-797cf",
+    "storage_bucket": "cosmetic1-797cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358457289217:android:cd92b0b998ab7f77",
+        "android_client_info": {
+          "package_name": "org.techtown.example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358457289217-brmgc309f1o6np1cvdr3kt5r8luli3ek.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCohNQvMr62Aip_IlotlNRLsL5efzBkXbY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
