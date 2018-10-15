@@ -28,15 +28,16 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="360dp"
-        android:layout_height="355dp"
+        android:layout_height="387dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="44dp"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="312dp"
+            android:layout_width="376dp"
+            android:layout_height="387dp"
             android:layout_gravity="center"
             android:layout_margin="20dp"
             android:layout_marginBottom="8dp"
@@ -67,9 +68,10 @@
         android:hint="이메일"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="408dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="408dp" />
 
     <EditText
         android:id="@+id/editText6"

@@ -98,9 +98,8 @@ public class RegistActivity extends AppCompatActivity {
                 // 자신을 호출한 Activity로 데이터를 보낸다.
                 setResult(RESULT_OK, result);
                 finish();
+
             }
         });
-
-
-
-    }}
+    }
+}
