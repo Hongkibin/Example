@@ -2,6 +2,7 @@ package org.techtown.example;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -9,13 +10,14 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class RegistActivity extends AppCompatActivity {
+public class Sign_up extends AppCompatActivity {
     private EditText etEmail;
     private EditText etPassword;
     private EditText nametext;
-    private Button btnDone;
+    private ImageButton btnDone;
     private EditText etPasswordConfirm;
 
 
@@ -29,7 +31,7 @@ public class RegistActivity extends AppCompatActivity {
         etPassword = (EditText) findViewById(R.id.etPassword);
         etPasswordConfirm = (EditText) findViewById(R.id.etPasswordConfirm);
         nametext = (EditText) findViewById(R.id.nametext);
-        btnDone = (Button) findViewById(R.id.btnDone);
+        btnDone = (ImageButton) findViewById(R.id.btnDone);
 
         // 비밀번호 일치 검사
        etPasswordConfirm.addTextChangedListener(new TextWatcher() {
@@ -64,28 +66,28 @@ public class RegistActivity extends AppCompatActivity {
 
                 // 이메일 입력 확인
                 if( etEmail.getText().toString().length() == 0 ) {
-                    Toast.makeText(RegistActivity.this, "Email을 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Sign_up.this, "Email을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etEmail.requestFocus();
                     return;
                 }
 
                 // 비밀번호 입력 확인
                 if( etPassword.getText().toString().length() == 0 ) {
-                    Toast.makeText(RegistActivity.this, "비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Sign_up.this, "비밀번호를 입력하세요!", Toast.LENGTH_SHORT).show();
                     etPassword.requestFocus();
                     return;
                 }
 
                 // 비밀번호 확인 입력 확인
                 if( etPasswordConfirm.getText().toString().length() == 0 ) {
-                    Toast.makeText(RegistActivity.this, "비밀번호 확인을 입력하세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Sign_up.this, "비밀번호 확인을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etPasswordConfirm.requestFocus();
                     return;
                 }
 
                 // 비밀번호 일치 확인
                 if( !etPassword.getText().toString().equals(etPasswordConfirm.getText().toString()) ) {
-                    Toast.makeText(RegistActivity.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Sign_up.this, "비밀번호가 일치하지 않습니다!", Toast.LENGTH_SHORT).show();
                     etPassword.setText("");
                     etPasswordConfirm.setText("");
                     etPassword.requestFocus();
@@ -96,7 +98,8 @@ public class RegistActivity extends AppCompatActivity {
                 result.putExtra("email", etEmail.getText().toString());
 
                 // 자신을 호출한 Activity로 데이터를 보낸다.
-                setResult(RESULT_OK, result);
+                setResult(RESULT_OK, result);//이게 아닌듯. 이건 그냥 돌아오는 느낌 . 클릭하면 클릭이벤트안에서
+                //aquery추가해줘야 된다고 함...
                 finish();
 
             }

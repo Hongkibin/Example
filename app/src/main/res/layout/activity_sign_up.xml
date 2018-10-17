@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Sign_up">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -54,13 +55,15 @@
         android:id="@+id/nametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/etPasswordConfirm"
-        tools:ignore="MissingConstraints,UnknownId"
-        tools:layout_editor_absoluteX="127dp" />
+        tools:ignore="MissingConstraints,UnknownId" />
 
     <ImageView
         android:id="@+id/imageView7"

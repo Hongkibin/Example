@@ -59,7 +59,6 @@
         <activity android:name=".Paper" />
         <activity android:name=".pre_mypage" />
         <activity android:name=".ReadDBActivity" />
-        <activity android:name=".test"></activity>
-    </application>
-
-</manifest>
+        <activity android:name=".Sign_up"/>
+        </application>
+    </manifest>

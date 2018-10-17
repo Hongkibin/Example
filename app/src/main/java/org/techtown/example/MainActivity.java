@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 
@@ -23,9 +24,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 101);
             }
         });
+        ImageButton imageButton10 = (ImageButton) findViewById(R.id.imageButton10);
+        imageButton10.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent16 = new Intent(getApplicationContext(),Sign_up.class);
+                startActivity(intent16);
+
+            }
+        });
+
     }
 
-    @Override
+  /*  @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -33,5 +46,5 @@ public class MainActivity extends AppCompatActivity {
             String name = data.getStringExtra("name");
             Toast.makeText(getApplicationContext(),"메뉴화면으로부터 응답 : "+name,Toast.LENGTH_LONG).show();
         }
-    }
+    }*/
 }

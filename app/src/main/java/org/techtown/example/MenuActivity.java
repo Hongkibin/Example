@@ -41,18 +41,7 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent1);
 
             }
-        });
-        Button button8 = (Button) findViewById(R.id.button8);
-        button8.setOnClickListener(new View.OnClickListener()
-
-        {
-            @Override
-            public void onClick (View v){
-                Intent intent2 = new Intent(getApplicationContext(),Register.class);
-                startActivity(intent2);
-
-            }
-        })*/
+        });*/
         ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
         imageButton2.setOnClickListener(new View.OnClickListener()
 
