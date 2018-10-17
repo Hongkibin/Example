@@ -24,17 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 101);
             }
         });
-        ImageButton imageButton10 = (ImageButton) findViewById(R.id.imageButton10);
-        imageButton10.setOnClickListener(new View.OnClickListener()
 
-        {
-            @Override
-            public void onClick (View v){
-                Intent intent16 = new Intent(getApplicationContext(),Sign_up.class);
-                startActivity(intent16);
-
-            }
-        });
 
     }
 
