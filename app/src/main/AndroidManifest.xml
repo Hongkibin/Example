@@ -5,7 +5,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />//인터넷 권한을 위해 permission추가해줌
+    <uses-permission android:name="android.permission.INTERNET" />
+    //인터넷 권한을 위해 permission추가해줌
     <uses-feature android:name="android.hardware.Camera" />
     <uses-feature android:name="android.hardware.camera2" />
     <uses-feature android:name="android.hardware.camera" />
@@ -25,31 +26,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service
 
-            android:name=".FireBaseMessagingService">
-
+        <service android:name=".FireBaseMessagingService">
             <intent-filter>
-
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-
         </service>
-
-
-
-
-        <service
-
-            android:name=".FirebaseInstanceIDService">
-
+        <service android:name=".FirebaseInstanceIDService">
             <intent-filter>
-
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
-
         </service>
 
         <activity android:name=".MenuActivity" />
@@ -59,6 +45,13 @@
         <activity android:name=".Paper" />
         <activity android:name=".pre_mypage" />
         <activity android:name=".ReadDBActivity" />
-        <activity android:name=".Sign_up"/>
-        </application>
-    </manifest>
+        <activity android:name=".Sign_up" />
+        <activity android:name=".Category_lips" />
+        <activity android:name=".Category_foundation" />
+        <activity android:name=".Category_etc" />
+        <activity android:name=".Category_eyes" />
+        <activity android:name=".Category_cream" />
+
+    </application>
+
+</manifest>

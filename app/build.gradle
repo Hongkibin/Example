@@ -31,4 +31,3 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:12.0.1'
     implementation 'com.googlecode.android-query:android-query:0.25.9'
 }
-
