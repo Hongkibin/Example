@@ -46,11 +46,13 @@
         <activity android:name=".pre_mypage" />
         <activity android:name=".ReadDBActivity" />
         <activity android:name=".Sign_up" />
-        <activity android:name=".Category_lips" />
+        <activity android:name=".Category_lips_tint" />
         <activity android:name=".Category_foundation" />
         <activity android:name=".Category_etc" />
         <activity android:name=".Category_eyes" />
         <activity android:name=".Category_cream" />
+        <activity android:name=".Category_lips_lipstick" />
+        <activity android:name=".Category_lips_lipbam" />
 
     </application>
 

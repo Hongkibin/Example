@@ -1,11 +1,20 @@
 package org.techtown.example;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.Toast;
 import com.androidquery.AQuery;
 
-public class Category_lips extends AppCompatActivity {
+
+
+public class Category_lips_tint extends AppCompatActivity {
+
     AQuery aq;
     AQuery aq1;
     AQuery aq2;
@@ -21,6 +30,30 @@ public class Category_lips extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_lips);
 
+        Button button30 = (Button) findViewById(R.id.button30);
+        button30.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =  new Intent(getApplicationContext(), Category_lips_tint.class);
+                startActivityForResult(intent, 101);
+            }
+        });
+        Button button31 = (Button) findViewById(R.id.button31);
+        button31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =  new Intent(getApplicationContext(), Category_lips_lipstick.class);
+                startActivityForResult(intent, 101);
+            }
+        });
+        Button button32 = (Button) findViewById(R.id.button32);
+        button32.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =  new Intent(getApplicationContext(), Category_lips_lipbam.class);
+                startActivityForResult(intent, 101);
+            }
+        });
 
         aq = new AQuery(this);
         aq.id(R.id.imageView20).image("https://shopping-phinf.pstatic.net/main_1089941/10899413799.20170928112851.jpg?type=f300");
@@ -49,4 +82,4 @@ public class Category_lips extends AppCompatActivity {
         aq8 = new AQuery(this);
         aq8.id(R.id.imageView28).image("http://image.oliveyoung.co.kr/uploads/images/goods/10/0000/0011/A00000011230301ko.jpg?l=ko");
         }
-    }
+}
