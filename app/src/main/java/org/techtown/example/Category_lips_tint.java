@@ -20,7 +20,7 @@ public class Category_lips_tint extends AppCompatActivity {
     AQuery aq2;
     AQuery aq3;
     AQuery aq4;
-    AQuery aq5;;
+    AQuery aq5;
     AQuery aq6;
     AQuery aq7;
     AQuery aq8;

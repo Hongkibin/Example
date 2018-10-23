@@ -24,7 +24,7 @@ public class Category_lips_lipbam extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_category_lips);
+        setContentView(R.layout.activity_category_lipbam);
 
         Button button30 = (Button) findViewById(R.id.button30);
         button30.setOnClickListener(new View.OnClickListener() {

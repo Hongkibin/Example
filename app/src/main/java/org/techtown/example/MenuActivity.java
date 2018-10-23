@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -15,6 +17,16 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+    /*    EditText idText = (EditText) findViewById(R.id.idText);
+
+        Intent intent = getIntent();
+        String userID = intent.getStringExtra("userID");
+        Toast.makeText(MenuActivity.this, "환영합니다. "+userID+" 님!", Toast.LENGTH_SHORT).show();
+
+
+        if(userID == null){
+            Toast.makeText(MenuActivity.this, "비회원으로 접속중", Toast.LENGTH_SHORT).show();
+        }*/
 
        Button button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener()

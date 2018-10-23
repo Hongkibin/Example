@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context=".Category_etc"
+    tools:context=".Category_lips_tint"
     tools:layout_editor_absoluteY="25dp">
 
     <ImageView
@@ -149,7 +149,8 @@
         android:background="@android:color/background_light"
         android:text="에뛰드 매트 시크 립라커"
         app:layout_constraintTop_toBottomOf="@+id/imageView21"
-        tools:layout_editor_absoluteX="157dp" />
+        tools:layout_editor_absoluteX="157dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button14"

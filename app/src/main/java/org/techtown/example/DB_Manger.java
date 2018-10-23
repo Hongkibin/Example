@@ -1,4 +1,4 @@
 package org.techtown.example;
 
-class DB_Manger {
+public class DB_Manger {
 }
