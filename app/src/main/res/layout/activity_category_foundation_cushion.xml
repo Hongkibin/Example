@@ -1,40 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Category_cream">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Category_foundation_cushion">
 
     <Button
-        android:id="@+id/button84"
-        android:layout_width="115dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button85"
-        app:layout_constraintStart_toEndOf="@+id/button91"
-        app:layout_constraintTop_toBottomOf="@+id/imageView80"
-        style="?android:attr/borderlessButtonStyle"/>
-
-    <Button
-        android:id="@+id/button85"
-        android:layout_width="115dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView81"
-        style="?android:attr/borderlessButtonStyle"/>
-
-    <Button
-        android:id="@+id/button86"
+        android:id="@+id/button74"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="8dp"
@@ -42,11 +15,11 @@
         android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView82"
+        app:layout_constraintTop_toBottomOf="@+id/imageView73"
         style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/button87"
+        android:id="@+id/button77"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
@@ -55,178 +28,220 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button83"
-        app:layout_constraintStart_toEndOf="@+id/button86"
-        app:layout_constraintTop_toBottomOf="@+id/imageView83"
+        app:layout_constraintEnd_toStartOf="@+id/button78"
+        app:layout_constraintStart_toEndOf="@+id/button74"
+        app:layout_constraintTop_toBottomOf="@+id/imageView74"
         style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/button88"
+        android:id="@+id/button78"
+        android:layout_width="115dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView75"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/button79"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView76"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <Button
+        android:id="@+id/button80"
+        android:layout_width="115dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button81"
+        app:layout_constraintStart_toEndOf="@+id/button79"
+        app:layout_constraintTop_toBottomOf="@+id/imageView77"
         style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/button90"
+        android:id="@+id/button81"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button91"
-        android:layout_width="115dp"
-        android:layout_height="53dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView79"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView78"
+        app:layout_constraintVertical_bias="0.285"
         style="?android:attr/borderlessButtonStyle"/>
 
     <ImageView
-        android:id="@+id/imageView80"
+        android:id="@+id/imageView74"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView81"
-        app:layout_constraintStart_toEndOf="@+id/imageView79"
-        app:layout_constraintTop_toBottomOf="@+id/button82"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView75"
+        app:layout_constraintStart_toEndOf="@+id/imageView73"
+        app:layout_constraintTop_toBottomOf="@+id/button73"
+        app:srcCompat="@mipmap/ic_launcher"
+        />
 
     <ImageView
-        android:id="@+id/imageView81"
+        android:id="@+id/imageView75"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button82"
+        app:layout_constraintTop_toBottomOf="@+id/button75"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageView
-        android:id="@+id/imageView82"
+        android:id="@+id/imageView76"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button74"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView77"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView78"
+        app:layout_constraintStart_toEndOf="@+id/imageView76"
+        app:layout_constraintTop_toBottomOf="@+id/button77"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView78"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button78"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView73"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button91"
+        app:layout_constraintTop_toBottomOf="@+id/button76"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <ImageView
-        android:id="@+id/imageView83"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView84"
-        app:layout_constraintStart_toEndOf="@+id/imageView82"
-        app:layout_constraintTop_toBottomOf="@+id/button84"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imageView84"
+        android:id="@+id/imageView72"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button85"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imageView85"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button88"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button86"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imageView86"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button89"
-        app:layout_constraintEnd_toStartOf="@+id/imageView87"
-        app:layout_constraintStart_toEndOf="@+id/imageView85"
-        app:layout_constraintTop_toBottomOf="@+id/button87"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imageView87"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button90"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button83"
-        app:srcCompat="@mipmap/ic_launcher" />
-
-    <ImageView
-        android:id="@+id/imageView79"
-        android:layout_width="115dp"
-        android:layout_height="115dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button45"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView71"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView72"
+        app:layout_constraintStart_toEndOf="@+id/imageView70"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button82"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <Button
-        android:id="@+id/button82"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
         android:layout_marginTop="8dp"
-        android:text="크림"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="쿠션"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/button83"
+        android:id="@+id/button45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="파운데이션"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="182dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/button73"
+        android:layout_width="115dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toStartOf="@+id/button75"
+        app:layout_constraintStart_toEndOf="@+id/button76"
+        app:layout_constraintTop_toBottomOf="@+id/imageView71"
+        style="?android:attr/borderlessButtonStyle"/>
+
+    <Button
+        android:id="@+id/button75"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
@@ -234,22 +249,19 @@
         android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView84"
+        app:layout_constraintTop_toBottomOf="@+id/imageView72"
         style="?android:attr/borderlessButtonStyle"/>
 
     <Button
-        android:id="@+id/button89"
+        android:id="@+id/button76"
         android:layout_width="115dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button90"
-        app:layout_constraintStart_toEndOf="@+id/button88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70"
         style="?android:attr/borderlessButtonStyle"/>
 
 </android.support.constraint.ConstraintLayout>

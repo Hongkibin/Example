@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.techtown.example">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    //인터넷 권한을 위해 permission추가해줌
     <uses-feature android:name="android.hardware.Camera" />
     <uses-feature android:name="android.hardware.camera2" />
     <uses-feature android:name="android.hardware.camera" />
@@ -42,15 +45,25 @@
         <activity android:name=".Category" />
         <activity android:name=".Paper" />
         <activity android:name=".pre_mypage" />
+        <activity android:name=".ReadDBActivity" />
         <activity android:name=".Sign_up" />
         <activity android:name=".Category_lips_tint" />
         <activity android:name=".Category_foundation" />
-        <activity android:name=".Category_etc" />
+        <activity android:name=".Category_etc_nail" />
         <activity android:name=".Category_eyes" />
         <activity android:name=".Category_cream" />
         <activity android:name=".Category_lips_lipstick" />
         <activity android:name=".Category_lips_lipbam" />
-        <activity android:name=".ReadDBActivity" />
+        <activity android:name=".Category_eye_brow" />
+        <activity android:name=".Category_eye_shadow" />
+        <activity android:name=".Category_eye_line" />
+        <activity android:name=".Category_eye_mascara" />
+        <activity android:name=".Category_foundation"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".Category_foundation_cushion" />
+        <activity android:name=".Category_etc_perfume" />
+        <activity android:name=".Category_etc_nail"
+            tools:ignore="DuplicateActivity" />
     </application>
 
 </manifest>

@@ -28,7 +28,7 @@ public class camera extends AppCompatActivity {
         File sdcard = Environment.getExternalStorageDirectory();
         file = new File(sdcard, "capture.jpg");
 
-        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView = (ImageView) findViewById(R.id.imageView29);
 
         Button button5 = (Button) findViewById(R.id.button5);
         button5.setOnClickListener(new View.OnClickListener() {

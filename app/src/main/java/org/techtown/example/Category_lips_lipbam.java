@@ -19,8 +19,6 @@ public class Category_lips_lipbam extends AppCompatActivity {
     AQuery aq23;
     AQuery aq24;
 
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,8 +62,7 @@ public class Category_lips_lipbam extends AppCompatActivity {
         aq21.id(R.id.imageView41).image("http://img.wemep.co.kr/deal/1/054/3920541/13db3c5e4583ba02a2cb1942105c194ee97e5ecd.jpg");
 
         aq22 = new AQuery(this);
-        aq22.id(R.id.imageView42).image("https://shopping-phinf.pstatic.net/main_4148732/4148732724.2017112810143");
-
+        aq22.id(R.id.imageView42).image("http://info.pipa.co.kr/files/attach/images/160/885/116/1bb7fe9dc01bfddcb177f15aa9a7e6a7.jpg");
 
         aq23 = new AQuery(this);
         aq23.id(R.id.imageView43).image("http://image.lotte.com/goods/22/60/69/60/3/360696022_1_280.jpg");
@@ -74,5 +71,5 @@ public class Category_lips_lipbam extends AppCompatActivity {
         aq24.id(R.id.imageView44).image("https://shopping-phinf.pstatic.net/main_4143495/4143495608.20170801093445.jpg?type=f300");
 
 
-        }
+    }
 }

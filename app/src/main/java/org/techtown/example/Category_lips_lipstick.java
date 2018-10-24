@@ -56,25 +56,25 @@ public class Category_lips_lipstick extends AppCompatActivity {
 
 
         aq9 = new AQuery(this);
-        aq9.id(R.id.imageView38).image("http://image.lotte.com/goods/81/51/55/31/2/231555181_1_550.jpg");
+        aq9.id(R.id.imageView29).image("http://image.lotte.com/goods/81/51/55/31/2/231555181_1_550.jpg");
 
         aq10=new AQuery(this);
-        aq10.id(R.id.imageView39).image("http://image.lotte.com/goods/00/90/73/66/4/466739000_1_550.jpg");
+        aq10.id(R.id.imageView30).image("http://image.lotte.com/goods/00/90/73/66/4/466739000_1_550.jpg");
 
         aq11 = new AQuery(this);
-        aq11.id(R.id.imageView40).image("http://images.amorepacificmall.com/UPLOAD/UPLOAD_IMAGE/C026/201712/IMG1514VzM359535363.jpg");
+        aq11.id(R.id.imageView31).image("http://images.amorepacificmall.com/UPLOAD/UPLOAD_IMAGE/C026/201712/IMG1514VzM359535363.jpg");
 
         aq12=new AQuery(this);
-        aq12.id(R.id.imageView41).image("http://image.oliveyoung.co.kr/uploads/images/goods/10/0000/0010/A00000010506601ko.jpg?l=ko");
+        aq12.id(R.id.imageView32).image("http://image.oliveyoung.co.kr/uploads/images/goods/10/0000/0010/A00000010506601ko.jpg?l=ko");
 
         aq13 = new AQuery(this);
-        aq13.id(R.id.imageView42).image("http://image.lotte.com/goods/99/22/51/35/35512299_3_550.jpg");
+        aq13.id(R.id.imageView33).image("http://image.lotte.com/goods/99/22/51/35/35512299_3_550.jpg");
 
         aq14=new AQuery(this);
-        aq14.id(R.id.imageView43).image("http://www.shuuemura.co.kr/ProductImg/Untitled-2(1).jpg");
+        aq14.id(R.id.imageView34).image("http://www.shuuemura.co.kr/ProductImg/Untitled-2(1).jpg");
 
         aq15 = new AQuery(this);
-        aq15.id(R.id.imageView44).image("http://image.lotte.com/goods/97/62/69/60/3/360696297_1_550.jpg");
+        aq15.id(R.id.imageView35).image("http://image.lotte.com/goods/97/62/69/60/3/360696297_1_550.jpg");
 
         aq16=new AQuery(this);
         aq16.id(R.id.imageView36).image("http://image.oliveyoung.co.kr/uploads/images/goods/10/0000/0010/A00000010515801ko.jpg?l=ko");

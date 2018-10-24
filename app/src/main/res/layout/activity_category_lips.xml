@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context=".Category_lips_tint"
+    tools:context=".Category_etc_nail"
     tools:layout_editor_absoluteY="25dp">
 
     <ImageView
@@ -15,6 +15,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button30"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -128,29 +129,28 @@
         android:id="@+id/button3"
         android:layout_width="115dp"
         android:layout_height="53dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:autoText="true"
         android:background="@android:color/background_light"
         android:text="에뛰드 디어 달링 워터 젤 틴트"
-        app:layout_constraintEnd_toStartOf="@+id/button13"
-        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button13"
         android:layout_width="115dp"
         android:layout_height="53dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:text="에뛰드 매트 시크 립라커"
+        app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/imageView21"
-        tools:layout_editor_absoluteX="157dp"
-        tools:ignore="MissingConstraints" />
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button14"
@@ -166,7 +166,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toEndOf="@+id/button13"
-        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button15"
@@ -178,7 +179,8 @@
         android:background="@android:color/background_light"
         android:text="조르지오아르마니 립 마에스트로"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView23" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button16"
@@ -194,7 +196,8 @@
         app:layout_constraintEnd_toStartOf="@+id/button17"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button15"
-        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView24"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button17"
@@ -206,7 +209,8 @@
         android:background="@android:color/background_light"
         android:text="투쿨포스쿨 글로시틴트  "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button18"
@@ -220,7 +224,8 @@
         android:text="삐아 라스트 벨벳 립 틴트"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView26" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView26"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button19"
@@ -235,7 +240,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button18"
         app:layout_constraintTop_toBottomOf="@+id/imageView27"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.375"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button20"
@@ -253,7 +259,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toEndOf="@+id/button19"
-        app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button30"
@@ -267,7 +274,8 @@
         android:text="틴트"
         app:layout_constraintEnd_toStartOf="@+id/button31"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button31"
@@ -278,7 +286,8 @@
         android:layout_marginTop="8dp"
         android:text="립스틱"
         app:layout_constraintEnd_toStartOf="@+id/button32"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/borderlessButtonStyle"/>
 
     <Button
         android:id="@+id/button32"
@@ -289,6 +298,7 @@
         android:layout_marginTop="8dp"
         android:text="립밤"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:attr/borderlessButtonStyle"/>
 
 </android.support.constraint.ConstraintLayout>

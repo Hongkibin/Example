@@ -38,7 +38,7 @@ public class Category extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                Intent intent19 = new Intent(getApplicationContext(),Category_eyes.class);
+                Intent intent19 = new Intent(getApplicationContext(),Category_eye_brow.class);
                 startActivity(intent19);
             }
         });
@@ -58,7 +58,7 @@ public class Category extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                Intent intent21 = new Intent(getApplicationContext(),Category_etc.class);
+                Intent intent21 = new Intent(getApplicationContext(),Category_etc_nail.class);
                 startActivity(intent21);
             }
         });

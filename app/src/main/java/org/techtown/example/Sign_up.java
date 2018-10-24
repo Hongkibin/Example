@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+//import com.google.android.gms.common.api.Response;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -117,7 +118,7 @@ public class Sign_up extends AppCompatActivity {
                 String userName = nameText.getText().toString();
                 int userAge = Integer.parseInt(ageText.getText().toString());
 
-                Response.Listener<String> responseListener = new Response.Listener<String>(){
+                com.android.volley.Response.Listener<String> responseListener = new com.android.volley.Response.Listener<String>(){
 
                     @Override
                     public void onResponse(String response) {
