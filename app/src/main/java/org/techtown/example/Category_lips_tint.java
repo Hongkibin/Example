@@ -35,24 +35,24 @@ public class Category_lips_tint extends AppCompatActivity {
         button30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =  new Intent(getApplicationContext(), Category_lips_tint.class);
-                startActivityForResult(intent, 101);
+                Intent intent17 =  new Intent(getApplicationContext(), Category_lips_tint.class);
+                startActivityForResult(intent17, 101);
             }
         });
         Button button31 = (Button) findViewById(R.id.button31);
         button31.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =  new Intent(getApplicationContext(), Category_lips_lipstick.class);
-                startActivityForResult(intent, 101);
+                Intent intent18 =  new Intent(getApplicationContext(), Category_lips_lipstick.class);
+                startActivityForResult(intent18, 101);
             }
         });
         Button button32 = (Button) findViewById(R.id.button32);
         button32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =  new Intent(getApplicationContext(), Category_lips_lipbam.class);
-                startActivityForResult(intent, 101);
+                Intent intent19 =  new Intent(getApplicationContext(), Category_lips_lipbam.class);
+                startActivityForResult(intent19, 101);
             }
         });
 

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Category extends AppCompatActivity {
@@ -62,6 +63,13 @@ public class Category extends AppCompatActivity {
                 startActivity(intent21);
             }
         });
-
+        Button button10 = (Button) findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent28 = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivityForResult(intent28, 101);
+            }
+        });
 }
   }
