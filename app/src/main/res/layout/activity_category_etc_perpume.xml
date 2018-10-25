@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_light"
     tools:context=".Category_etc_perfume">
 
     <Button
@@ -32,42 +33,42 @@
 
     <Button
         android:id="@+id/button106"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView100"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView100" />
 
     <Button
         android:id="@+id/button107"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintEnd_toStartOf="@+id/button108"
         app:layout_constraintStart_toEndOf="@+id/button106"
-        app:layout_constraintTop_toBottomOf="@+id/imageView101"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView101" />
 
     <Button
         android:id="@+id/button108"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView102"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView102" />
 
     <Button
         android:id="@+id/button109"
@@ -120,7 +121,7 @@
         android:layout_height="115dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button92"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -133,7 +134,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorWhite"
         app:layout_constraintEnd_toStartOf="@+id/imageView99"
         app:layout_constraintStart_toEndOf="@+id/imageView97"
@@ -146,7 +147,7 @@
         android:layout_height="115dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button93"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -193,7 +194,7 @@
         android:layout_height="115dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button106"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -206,7 +207,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView105"
         app:layout_constraintStart_toEndOf="@+id/imageView103"
         app:layout_constraintTop_toBottomOf="@+id/button107"
@@ -218,38 +219,45 @@
         android:layout_height="115dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button108"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <Button
         android:id="@+id/button92"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="네일,리무버"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/button93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:background="#ffbb33" />
 
     <Button
         android:id="@+id/button93"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginTop="8dp"
         android:text="향수"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/borderlessButtonStyle"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:background="#ffbb33" />
     <Button
         android:id="@+id/button105"
         android:layout_width="115dp"
@@ -265,6 +273,20 @@
         app:layout_constraintStart_toEndOf="@+id/button104"
         app:layout_constraintTop_toBottomOf="@+id/imageView99"
         style="?android:attr/borderlessButtonStyle"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abcd" />
 
 
 </android.support.constraint.ConstraintLayout>

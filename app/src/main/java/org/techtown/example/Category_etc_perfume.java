@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.androidquery.AQuery;
 
@@ -42,6 +43,16 @@ public class Category_etc_perfume extends AppCompatActivity {
             }
         });
 
+        ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                startActivity(intent15);
+            }
+        });
 
         aq78 = new AQuery(this);
         aq78.id(R.id.imageView97).image("https://seoul-p-studio.bunjang.net/product/65993482_1_1521352722_w640.jpg");

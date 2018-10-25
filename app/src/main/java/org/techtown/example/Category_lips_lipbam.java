@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.androidquery.AQuery;
 
@@ -46,6 +47,17 @@ public class Category_lips_lipbam extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent19 =  new Intent(getApplicationContext(), Category_lips_lipbam.class);
                 startActivityForResult(intent19, 101);
+            }
+        });
+
+        ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                startActivity(intent15);
             }
         });
 

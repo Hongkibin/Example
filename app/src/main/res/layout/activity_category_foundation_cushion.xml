@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
     tools:context=".Category_foundation_cushion">
 
     <Button
         android:id="@+id/button74"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="8dp"
@@ -15,8 +17,7 @@
         android:layout_marginTop="8dp"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView73"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView73" />
 
     <Button
         android:id="@+id/button77"
@@ -47,6 +48,7 @@
 
     <Button
         android:id="@+id/button79"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
@@ -61,6 +63,7 @@
 
     <Button
         android:id="@+id/button80"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="16dp"
@@ -74,7 +77,7 @@
         app:layout_constraintEnd_toStartOf="@+id/button81"
         app:layout_constraintStart_toEndOf="@+id/button79"
         app:layout_constraintTop_toBottomOf="@+id/imageView77"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
         android:id="@+id/button81"
@@ -203,28 +206,39 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="72dp"
-        android:layout_marginStart="72dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
-        android:text="쿠션"
+        android:text="파운데이션"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:background="#ffbb33"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+         />
 
     <Button
         android:id="@+id/button45"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="파운데이션"
+        android:text="쿠션"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="182dp"
-        style="?android:attr/borderlessButtonStyle"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:background="#ffbb33" />
     <Button
         android:id="@+id/button73"
         android:layout_width="115dp"
@@ -263,5 +277,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView70"
         style="?android:attr/borderlessButtonStyle"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abcd" />
+
 
 </android.support.constraint.ConstraintLayout>

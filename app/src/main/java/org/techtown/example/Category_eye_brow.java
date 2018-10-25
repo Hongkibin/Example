@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import com.androidquery.AQuery;
 import android.support.v7.app.AppCompatActivity;
-
+import android.widget.ImageButton;
 
 
 public class Category_eye_brow extends AppCompatActivity {
@@ -53,6 +53,17 @@ public class Category_eye_brow extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent22 = new Intent(getApplicationContext(), Category_eye_mascara.class);
                 startActivityForResult(intent22, 101);
+            }
+        });
+
+        ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                startActivity(intent15);
             }
         });
 

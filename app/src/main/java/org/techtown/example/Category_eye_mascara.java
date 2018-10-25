@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.androidquery.AQuery;
 
@@ -55,6 +56,16 @@ public class Category_eye_mascara extends AppCompatActivity {
             }
         });
 
+        ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                startActivity(intent15);
+            }
+        });
 
         aq45 = new AQuery(this);
         aq45.id(R.id.imageView54).image("https://image.powderroom.co.kr/o/be338b0d91e60b87/8b/c2/81/7a29e0cd1ebcc9e192fb72d01a7c36ed89.jpg");

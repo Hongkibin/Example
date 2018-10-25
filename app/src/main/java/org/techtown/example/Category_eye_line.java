@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.androidquery.AQuery;
 
@@ -56,6 +57,16 @@ public class Category_eye_line extends AppCompatActivity
                 }
             });
 
+            ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+            imageButton2.setOnClickListener(new View.OnClickListener()
+
+            {
+                @Override
+                public void onClick (View v){
+                    Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                    startActivity(intent15);
+                }
+            });
 
             aq39 = new AQuery(this);
             aq39.id(R.id.imageView15).image("http://image.ethefaceshop.com/tfsshopWebSrc/upload/product/201511/AF003300_06_1.jpg");

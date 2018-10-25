@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.androidquery.AQuery;
@@ -42,6 +43,16 @@ public class Category_foundation extends AppCompatActivity{
             }
         });
 
+        ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                startActivity(intent15);
+            }
+        });
 
         aq51 = new AQuery(this);
         aq51.id(R.id.imageView61).image("http://image.oliveyoung.co.kr/uploads/images/goods/550/10/0000/0001/A00000001515703ko.jpg?l=ko");

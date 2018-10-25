@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.androidquery.AQuery;
 
@@ -42,6 +43,16 @@ public class Category_etc_nail extends AppCompatActivity{
             }
         });
 
+        ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
+        imageButton2.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent15 = new Intent(getApplicationContext(),Category.class);
+                startActivity(intent15);
+            }
+        });
 
         aq69 = new AQuery(this);
         aq69.id(R.id.imageView88).image("http://lfyaklyqypvr852590.gcdn.ntruss.com/data/nature_data/images/product/00/00/01/08/86/b_0000010886.gif");
