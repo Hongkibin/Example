@@ -216,11 +216,11 @@
         android:layout_marginTop="8dp"
         android:text="틴트"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33" />
+        android:background="@drawable/rounded" />
 
     <Button
         android:id="@+id/button31"
@@ -234,12 +234,12 @@
         android:layout_marginTop="8dp"
         android:text="립스틱"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toStartOf="@+id/button32"
         app:layout_constraintStart_toEndOf="@+id/button30"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33"
+        android:background="@drawable/rounded"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -252,11 +252,11 @@
         android:layout_marginTop="8dp"
         android:text="립밤"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33" />
+        android:background="@drawable/rounded" />
 
     <ImageButton
         android:id="@+id/imageButton2"

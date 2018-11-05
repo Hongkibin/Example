@@ -1,6 +1,8 @@
 package org.techtown.example;
 
 
+import android.app.DatePickerDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +10,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.DatePicker;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.app.Activity;
@@ -25,58 +30,192 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.Calendar;
 
 public class Mypage  extends Activity implements View.OnClickListener {
 
+    ///카메라 관련
     private static final int PICK_FROM_CAMERA = 0;
-
     private static final int PICK_FROM_ALBUM = 1;
-
     private static final int CROP_FROM_iMAGE = 2;
-
-
     private Uri mImageCaptureUri;
-
     private ImageView iv_UserPhoto;
-
     private int id_view;
-
     private String absoultePath;
-
-
     private DB_Manger dbmanger;
 
+///디데이 관련
+    private TextView dateText;
+    private TextView todayText;
+    private TextView resultText;
+    private Button dateButton;
 
+    private int tYear;           //오늘 연월일 변수
+    private int tMonth;
+    private int tDay;
+
+    private int dYear=1;        //디데이 연월일 변수
+    private int dMonth=1;
+    private int dDay=1;
+
+
+    private long d;
+    private long t;
+    private long r;
+
+    private int resultNumber=0;
+
+    static final int DATE_DIALOG_ID=0;
+///디데이 ///
     @Override
 
     public void onCreate(Bundle savedInstanceState)
-
     {
-
-
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_mypage);
 
+        /*카테고리 가는 버튼*/
+        Button button9 = (Button) findViewById(R.id.button9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent29 = new Intent(getApplicationContext(), Category.class);
+                startActivity(intent29);
+            }
+        });
+        ////디데이///
+        final CheckBox cb1 = (CheckBox)findViewById(R.id.checkBox);
 
+        dateText=(TextView)findViewById(R.id.date);
+        todayText = (TextView) findViewById(R.id.today);
+        // resultText=(TextView)findViewById(R.id.result);
+         dateButton=(Button)findViewById(R.id.dateButton);
+        Calendar calendar = Calendar.getInstance();              //현재 날짜 불러옴
+        tYear = calendar.get(Calendar.YEAR);
+        tMonth = calendar.get(Calendar.MONTH);
+        tDay = calendar.get(Calendar.DAY_OF_MONTH);
+
+      //  t = calendar.getTimeInMillis();
+
+        todayText.setText("제조일자를 입력 해 주세요");
+
+        dateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO Auto-generated method stub
+                showDialog(0);//----------------
+            }
+        });
+/////////////////////////////////////////////////////////
         dbmanger = new DB_Manger();
-
-
         iv_UserPhoto = (ImageView) this.findViewById(R.id.imageView5);
-
         Button btn_agreeJoin = (Button) this.findViewById(R.id.button6);
-
-
         btn_agreeJoin.setOnClickListener(this);
+       /*
+        제조일자
+        Spinner yearSpinner = (Spinner)findViewById(R.id.spinner_year);
+        ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(this,
+                R.array.date_year, android.R.layout.simple_spinner_item);
+        yearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        yearSpinner.setAdapter(yearAdapter);
+
+        Spinner monthSpinner = (Spinner)findViewById(R.id.spinner_month);
+        ArrayAdapter monthAdapter = ArrayAdapter.createFromResource(this,
+                R.array.date_month, android.R.layout.simple_spinner_item);
+        monthAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        monthSpinner.setAdapter(monthAdapter);
+
+        Spinner daySpinner = (Spinner)findViewById(R.id.spinner_day);
+        ArrayAdapter dayAdapter = ArrayAdapter.createFromResource(this,
+                R.array.date_day, android.R.layout.simple_spinner_item);
+        dayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        daySpinner.setAdapter(dayAdapter);
+       */
+////////카테고리
+        Spinner categorySpinner = (Spinner)findViewById(R.id.spinner_category);
+
+        ArrayAdapter categoryAdapter = ArrayAdapter.createFromResource(this,
+
+                R.array.category, android.R.layout.simple_spinner_item);
+
+        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        categorySpinner.setAdapter(categoryAdapter);
+
+//////체크박스
+        cb1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String result = "";
+                if(cb1.isChecked()) {
+                    result += cb1.getText().toString();
+                    if (result.equals("YES"))
+                        updateDisplay();
+
+                }else{
+                    todayText.setText("제조일자를 입력 해 주세요");
+                }
+            }
+        });
+
+//마이페이지 넘어가는 거
+        Button button8 = (Button) findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+                Intent intent18 = new Intent(getApplicationContext(),pre_mypage.class);
+                startActivity(intent18);
+
+            }
+        });
+
 
     }
+/*디데이*/
+
+    private void updateDisplay() {
+
+        todayText.setText(String.format("%d년 %d월 %d일", tYear, tMonth + 1, tDay));
+
+    }
+    private void updateDisplay1() {
+        dateText.setText(String.format("%d년 %d월 %d일",dYear, dMonth+1,dDay));
+    }
+
+    private DatePickerDialog.OnDateSetListener dDateSetListener=new DatePickerDialog.OnDateSetListener() {
+
+        @Override
+        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+            // TODO Auto-generated method stub
+            dYear=year;
+            dMonth=monthOfYear;
+            dDay=dayOfMonth;
+            final Calendar dCalendar =Calendar.getInstance();
+            dCalendar.set(dYear,dMonth, dDay);
+
+           // d=dCalendar.getTimeInMillis();
+            //r=(d-t)/(24*60*60*1000);
+
+            //resultNumber=(int)r;
+            updateDisplay1();
+        }
+    };
 
 
-
+    @Override
+    protected Dialog onCreateDialog(int id){
+        if(id==DATE_DIALOG_ID){
+            return new DatePickerDialog(this,dDateSetListener,tYear,tMonth,tDay);
+        }
+        return null;
+    }
 
     /**
 
@@ -145,10 +284,6 @@ public class Mypage  extends Activity implements View.OnClickListener {
             case PICK_FROM_ALBUM:
 
             {
-
-                // 이후의 처리가 카메라와 같으므로 일단  break없이 진행합니다.
-
-                // 실제 코드에서는 좀더 합리적인 방법을 선택하시기 바랍니다.
 
                 mImageCaptureUri = data.getData();
 
@@ -413,54 +548,4 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
 }
 
-    /*@Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mypage);
-
-        Spinner yearSpinner = (Spinner)findViewById(R.id.spinner_year);
-
-        ArrayAdapter yearAdapter = ArrayAdapter.createFromResource(this,
-
-                R.array.date_year, android.R.layout.simple_spinner_item);
-
-        yearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        yearSpinner.setAdapter(yearAdapter);
-
-
-        Spinner monthSpinner = (Spinner)findViewById(R.id.spinner_month);
-
-        ArrayAdapter monthAdapter = ArrayAdapter.createFromResource(this,
-
-                R.array.date_month, android.R.layout.simple_spinner_item);
-
-        monthAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        monthSpinner.setAdapter(monthAdapter);
-
-
-        Spinner daySpinner = (Spinner)findViewById(R.id.spinner_day);
-
-        ArrayAdapter dayAdapter = ArrayAdapter.createFromResource(this,
-
-                R.array.date_day, android.R.layout.simple_spinner_item);
-
-        dayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        daySpinner.setAdapter(dayAdapter);
-
-
-       Button button8 = (Button) findViewById(R.id.button8);
-        button8.setOnClickListener(new View.OnClickListener()
-
-        {
-            @Override
-            public void onClick (View v){
-                Intent intent18 = new Intent(getApplicationContext(),pre_mypage.class);
-                startActivity(intent18);
-
-            }
-        });
-    }*/
 

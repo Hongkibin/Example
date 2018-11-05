@@ -27,6 +27,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView31"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toEndOf="@+id/imageView29"
         app:layout_constraintTop_toBottomOf="@+id/button31"
         app:srcCompat="@mipmap/ic_launcher" />
@@ -160,11 +161,14 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:text="조르지오아르마니 립 마에스트로"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="408dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView32"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button37"
@@ -252,11 +256,11 @@
         android:layout_marginTop="8dp"
         android:text="틴트"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33" />
+        android:background="@drawable/rounded"/>
 
     <Button
         android:id="@+id/button31"
@@ -267,15 +271,16 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/baedal"
         android:text="립스틱"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/button32"
         app:layout_constraintStart_toEndOf="@+id/button30"
-        tools:background="#ffbb33"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="56dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button32"
@@ -287,11 +292,11 @@
         android:layout_marginTop="8dp"
         android:text="립밤"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33" />
+        android:background="@drawable/rounded" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -301,9 +306,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/abcd" />
 </android.support.constraint.ConstraintLayout>

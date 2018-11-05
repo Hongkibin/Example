@@ -7,6 +7,7 @@
     android:background="@android:color/background_light"
     tools:context=".Category_cream">
 
+
     <Button
         android:id="@+id/button84"
         style="?android:attr/borderlessButtonStyle"
@@ -214,22 +215,23 @@
 
     <Button
         android:id="@+id/button82"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
         android:text="크림"
-         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="@font/baedal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
+        app:srcCompat="@mipmap/ic_launcher"
         />
 
     <Button

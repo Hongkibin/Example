@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "358457289217",
-    "firebase_url": "https://cosmetic1-797cf.firebaseio.com",
-    "project_id": "cosmetic1-797cf",
-    "storage_bucket": "cosmetic1-797cf.appspot.com"
+    "project_number": "174843804617",
+    "firebase_url": "https://sisisi-b80d1.firebaseio.com",
+    "project_id": "sisisi-b80d1",
+    "storage_bucket": "sisisi-b80d1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:358457289217:android:cd92b0b998ab7f77",
+        "mobilesdk_app_id": "1:174843804617:android:cd92b0b998ab7f77",
         "android_client_info": {
           "package_name": "org.techtown.example"
         }
       },
       "oauth_client": [
         {
-          "client_id": "358457289217-brmgc309f1o6np1cvdr3kt5r8luli3ek.apps.googleusercontent.com",
+          "client_id": "174843804617-rcr2sps5mkfi4t3iobck3nnfrb9k3d0q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCohNQvMr62Aip_IlotlNRLsL5efzBkXbY"
+          "current_key": "AIzaSyDTcqLLRL9thwxaDAgt7zF9K9rh_ORs_u8"
         }
       ],
       "services": {

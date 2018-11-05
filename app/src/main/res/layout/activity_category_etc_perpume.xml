@@ -236,12 +236,12 @@
         android:layout_marginTop="8dp"
         android:text="네일,리무버"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toStartOf="@+id/button93"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33" />
+        android:background="@drawable/rounded" />
 
     <Button
         android:id="@+id/button93"
@@ -253,11 +253,11 @@
         android:layout_marginTop="8dp"
         android:text="향수"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:background="#ffbb33" />
+        android:background="@drawable/rounded" />
     <Button
         android:id="@+id/button105"
         android:layout_width="115dp"

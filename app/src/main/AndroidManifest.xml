@@ -28,16 +28,27 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".FireBaseMessagingService">
+        <service
+            android:name=".MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".FirebaseInstanceIDService">
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+
+
+
+
+
 
         <activity android:name=".MenuActivity" />
         <activity android:name=".Mypage" />
@@ -50,7 +61,6 @@
         <activity android:name=".Category_lips_tint" />
         <activity android:name=".Category_foundation" />
         <activity android:name=".Category_etc_nail" />
-        <activity android:name=".Category_eyes" />
         <activity android:name=".Category_cream" />
         <activity android:name=".Category_lips_lipstick" />
         <activity android:name=".Category_lips_lipbam" />
