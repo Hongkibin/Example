@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
          FirebaseMessaging.getInstance().subscribeToTopic("news");
          FirebaseInstanceId.getInstance().getToken();
-
+//여기 뭐냐 그겁니다 마이페이지 도전이요
         final EditText idText = (EditText) findViewById(R.id.idText);
         final EditText passwordText = (EditText) findViewById(R.id.passwordText);
         final Button loginButton = (Button) findViewById(R.id.loginButton);

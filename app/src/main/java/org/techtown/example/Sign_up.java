@@ -27,7 +27,6 @@ public class Sign_up extends AppCompatActivity {
 
     private EditText etPasswordConfirm;
 
-
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

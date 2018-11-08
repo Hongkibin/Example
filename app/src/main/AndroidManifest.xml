@@ -74,6 +74,9 @@
         <activity android:name=".Category_etc_perfume" />
         <activity android:name=".Category_etc_nail"
             tools:ignore="DuplicateActivity" />
+        <activity android:name=".Alram" />
+<receiver android:name=".AlramReceiver">
+    </receiver>
     </application>
 
 </manifest>

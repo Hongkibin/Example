@@ -1,6 +1,7 @@
 package org.techtown.example;
 
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.app.Activity;
@@ -32,10 +34,18 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Calendar;
+
 
 public class Mypage  extends Activity implements View.OnClickListener {
 
@@ -49,35 +59,42 @@ public class Mypage  extends Activity implements View.OnClickListener {
     private String absoultePath;
     private DB_Manger dbmanger;
 
-///디데이 관련
+    ///디데이 관련
     private TextView dateText;
     private TextView todayText;
-    private TextView resultText;
+    // private TextView resultText;
     private Button dateButton;
 
     private int tYear;           //오늘 연월일 변수
     private int tMonth;
     private int tDay;
 
-    private int dYear=1;        //디데이 연월일 변수
-    private int dMonth=1;
-    private int dDay=1;
+    private int dYear = 1;        //디데이 연월일 변수
+    private int dMonth = 1;
+    private int dDay = 1;
 
 
     private long d;
     private long t;
     private long r;
 
-    private int resultNumber=0;
+    private int resultNumber = 0;
 
-    static final int DATE_DIALOG_ID=0;
-///디데이 ///
+    static final int DATE_DIALOG_ID = 0;
+
+    ///디데이 ///
     @Override
 
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mypage);
+
+        //////php 연동 위한 mypage
+        final TextView today = (TextView) findViewById(R.id.today); //개봉 버튼 누르는 거
+        final EditText editText = (EditText) findViewById(R.id.editText); //제품명
+        final TextView date = (TextView) findViewById(R.id.date); // 제조일자
+        final ImageView imageView5 = (ImageView) findViewById(R.id.imageView5); // 이미지
+        final Spinner spinner_category = (Spinner) findViewById(R.id.spinner_category); //카테고리 선택
 
         /*카테고리 가는 버튼*/
         Button button9 = (Button) findViewById(R.id.button9);
@@ -89,18 +106,18 @@ public class Mypage  extends Activity implements View.OnClickListener {
             }
         });
         ////디데이///
-        final CheckBox cb1 = (CheckBox)findViewById(R.id.checkBox);
+        final CheckBox cb1 = (CheckBox) findViewById(R.id.checkBox);
 
-        dateText=(TextView)findViewById(R.id.date);
+        dateText = (TextView) findViewById(R.id.date);
         todayText = (TextView) findViewById(R.id.today);
         // resultText=(TextView)findViewById(R.id.result);
-         dateButton=(Button)findViewById(R.id.dateButton);
+        dateButton = (Button) findViewById(R.id.dateButton);
         Calendar calendar = Calendar.getInstance();              //현재 날짜 불러옴
         tYear = calendar.get(Calendar.YEAR);
         tMonth = calendar.get(Calendar.MONTH);
         tDay = calendar.get(Calendar.DAY_OF_MONTH);
 
-      //  t = calendar.getTimeInMillis();
+        //  t = calendar.getTimeInMillis();
 
         todayText.setText("제조일자를 입력 해 주세요");
 
@@ -137,7 +154,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
         daySpinner.setAdapter(dayAdapter);
        */
 ////////카테고리
-        Spinner categorySpinner = (Spinner)findViewById(R.id.spinner_category);
+        Spinner categorySpinner = (Spinner) findViewById(R.id.spinner_category);
 
         ArrayAdapter categoryAdapter = ArrayAdapter.createFromResource(this,
 
@@ -147,17 +164,30 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
         categorySpinner.setAdapter(categoryAdapter);
 
+        /////알람으로 가기
+
+        Button alarm = (Button) findViewById(R.id.alarm);
+        alarm.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick(View v) {
+                Intent intent30 = new Intent(getApplicationContext(), Alram.class);
+                startActivity(intent30);
+            }
+        });
+
 //////체크박스
         cb1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String result = "";
-                if(cb1.isChecked()) {
+                if (cb1.isChecked()) {
                     result += cb1.getText().toString();
                     if (result.equals("YES"))
                         updateDisplay();
 
-                }else{
+                } else {
                     todayText.setText("제조일자를 입력 해 주세요");
                 }
             }
@@ -169,38 +199,84 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
         {
             @Override
-            public void onClick (View v){
-                Intent intent18 = new Intent(getApplicationContext(),pre_mypage.class);
+            public void onClick(View v) {
+                Intent intent18 = new Intent(getApplicationContext(), pre_mypage.class);
                 startActivity(intent18);
 
             }
         });
 
 
+
+
+/*php연동
+        String Mypage_today = todayText.getText().toString();
+        String Mypage_date = dateText.getText().toString();
+        //String Mypage_name = editText.getText().toString();
+        //int userAge = Integer.parseInt(ageText.getText().toString());
+
+        com.android.volley.Response.Listener<String> responseListener = new com.android.volley.Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonResponse = new JSONObject(response);
+                    boolean success = jsonResponse.getBoolean("success");
+                    if (success) {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Mypage.this);
+                        builder.setMessage("게시글 등록에 성공했습니다.")
+                                .setPositiveButton("확인", null)
+                                .create()
+                                .show();
+                        Intent intent = new Intent(Mypage.this, MainActivity.class);
+                        Mypage.this.startActivity(intent);
+                    } else {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(Mypage.this);
+                        builder.setMessage("게시글 등록에 실패했습니다.")
+                                .setNegativeButton("다시 시도", null)
+                                .create()
+                                .show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        };
+        Mypage_Request Mypage_up = new Mypage_Request(Mypage_date, Mypage_today,responseListener);
+        RequestQueue queue = Volley.newRequestQueue(Mypage.this);
+        queue.add(Mypage_Request);
+*/
     }
-/*디데이*/
+
+
+
+
+
+    /*디데이*/
 
     private void updateDisplay() {
 
         todayText.setText(String.format("%d년 %d월 %d일", tYear, tMonth + 1, tDay));
 
     }
+
     private void updateDisplay1() {
-        dateText.setText(String.format("%d년 %d월 %d일",dYear, dMonth+1,dDay));
+        dateText.setText(String.format("%d년 %d월 %d일", dYear, dMonth + 1, dDay));
     }
 
-    private DatePickerDialog.OnDateSetListener dDateSetListener=new DatePickerDialog.OnDateSetListener() {
+    private DatePickerDialog.OnDateSetListener dDateSetListener = new DatePickerDialog.OnDateSetListener() {
 
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             // TODO Auto-generated method stub
-            dYear=year;
-            dMonth=monthOfYear;
-            dDay=dayOfMonth;
-            final Calendar dCalendar =Calendar.getInstance();
-            dCalendar.set(dYear,dMonth, dDay);
+            dYear = year;
+            dMonth = monthOfYear;
+            dDay = dayOfMonth;
+            final Calendar dCalendar = Calendar.getInstance();
+            dCalendar.set(dYear, dMonth, dDay);
 
-           // d=dCalendar.getTimeInMillis();
+            // d=dCalendar.getTimeInMillis();
             //r=(d-t)/(24*60*60*1000);
 
             //resultNumber=(int)r;
@@ -210,17 +286,15 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
 
     @Override
-    protected Dialog onCreateDialog(int id){
-        if(id==DATE_DIALOG_ID){
-            return new DatePickerDialog(this,dDateSetListener,tYear,tMonth,tDay);
+    protected Dialog onCreateDialog(int id) {
+        if (id == DATE_DIALOG_ID) {
+            return new DatePickerDialog(this, dDateSetListener, tYear, tMonth, tDay);
         }
         return null;
     }
 
     /**
-
      * 카메라에서 사진 촬영
-
      */
 
     public void doTakePhotoAction() // 카메라 촬영 후 이미지 가져오기
@@ -245,9 +319,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
 
     /**
-
      * 앨범에서 이미지 가져오기
-
      */
 
     public void doTakeAlbumAction() // 앨범에서 이미지 가져오기
@@ -269,15 +341,15 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        super.onActivityResult(requestCode,resultCode,data);
+        super.onActivityResult(requestCode, resultCode, data);
 
 
-        if(resultCode != RESULT_OK)
+        if (resultCode != RESULT_OK)
 
             return;
 
 
-        switch(requestCode)
+        switch (requestCode)
 
         {
 
@@ -287,7 +359,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
                 mImageCaptureUri = data.getData();
 
-                Log.d("SmartWheel",mImageCaptureUri.getPath().toString());
+                Log.d("SmartWheel", mImageCaptureUri.getPath().toString());
 
             }
 
@@ -335,7 +407,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
                 // 임시 파일을 삭제합니다.
 
-                if(resultCode != RESULT_OK) {
+                if (resultCode != RESULT_OK) {
 
                     return;
 
@@ -347,12 +419,12 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
                 // CROP된 이미지를 저장하기 위한 FILE 경로
 
-                String filePath = Environment.getExternalStorageDirectory().getAbsolutePath()+
+                String filePath = Environment.getExternalStorageDirectory().getAbsolutePath() +
 
-                        "/SmartWheel/"+System.currentTimeMillis()+".jpg";
+                        "/SmartWheel/" + System.currentTimeMillis() + ".jpg";
 
 
-                if(extras != null)
+                if (extras != null)
 
                 {
 
@@ -374,7 +446,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
                 File f = new File(mImageCaptureUri.getPath());
 
-                if(f.exists())
+                if (f.exists())
 
                 {
 
@@ -387,7 +459,6 @@ public class Mypage  extends Activity implements View.OnClickListener {
         }
 
 
-
     }
 
 
@@ -397,7 +468,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
         id_view = v.getId();
 
-        if(v.getId() == R.id.button8) {
+        if (v.getId() == R.id.button8) {
 
             /** SharedPreference 환경 변수 사용 **/
 
@@ -409,7 +480,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
             String facebook_login = prefs.getString("FACEBOOK_LOGIN", "LOGOUT");
 
-            String user_id = prefs.getString("USER_ID","");
+            String user_id = prefs.getString("USER_ID", "");
 
             String user_name = prefs.getString("USER_NAME", "");
 
@@ -419,7 +490,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
             String user_email = prefs.getString("USER_EMAIL", "");
 
-           // dbmanger.select(user_id,user_name,user_password, user_phone, user_email);
+            // dbmanger.select(user_id,user_name,user_password, user_phone, user_email);
 
             //dbmanger.selectPhoto(user_name, mImageCaptureUri, absoultePath);
 
@@ -433,7 +504,7 @@ public class Mypage  extends Activity implements View.OnClickListener {
             Toast.makeText(this, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
 
 
-        }else if(v.getId() == R.id.button6) {
+        } else if (v.getId() == R.id.button6) {
 
             DialogInterface.OnClickListener cameraListener = new DialogInterface.OnClickListener() {
 
@@ -501,12 +572,12 @@ public class Mypage  extends Activity implements View.OnClickListener {
 
         // SmartWheel 폴더를 생성하여 이미지를 저장하는 방식이다.
 
-        String dirPath = Environment.getExternalStorageDirectory().getAbsolutePath()+"/SmartWheel";
+        String dirPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/SmartWheel";
 
         File directory_SmartWheel = new File(dirPath);
 
 
-        if(!directory_SmartWheel.exists()) // SmartWheel 디렉터리에 폴더가 없다면 (새로 이미지를 저장할 경우에 속한다.)
+        if (!directory_SmartWheel.exists()) // SmartWheel 디렉터리에 폴더가 없다면 (새로 이미지를 저장할 경우에 속한다.)
 
             directory_SmartWheel.mkdir();
 
@@ -533,7 +604,6 @@ public class Mypage  extends Activity implements View.OnClickListener {
                     Uri.fromFile(copyFile)));
 
 
-
             out.flush();
 
             out.close();
@@ -545,7 +615,5 @@ public class Mypage  extends Activity implements View.OnClickListener {
         }
 
     }
-
 }
-
 
