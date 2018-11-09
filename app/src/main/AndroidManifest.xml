@@ -30,6 +30,7 @@
 
         <service
             android:name=".MyFireBaseMessagingService"
+
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -43,9 +44,15 @@
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
+
         </service>
 
 
+        <service
+            android:name=".RingtonePlayingService"
+            android:enabled="true">
+
+        </service>
 
 
 
@@ -74,8 +81,8 @@
         <activity android:name=".Category_etc_perfume" />
         <activity android:name=".Category_etc_nail"
             tools:ignore="DuplicateActivity" />
-        <activity android:name=".Alram" />
-<receiver android:name=".AlramReceiver">
+        <activity android:name=".Alarm" />
+<receiver android:name=".AlarmReceiver">
     </receiver>
     </application>
 

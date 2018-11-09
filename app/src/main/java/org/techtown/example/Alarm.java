@@ -1,11 +1,11 @@
 package org.techtown.example;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import android.app.*;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -14,12 +14,12 @@ import android.widget.DatePicker.OnDateChangedListener;
 import android.widget.TimePicker.OnTimeChangedListener;
 import android.widget.Toast;
 
-public class Alram extends Activity
+public class Alarm extends Activity
         implements OnDateChangedListener, OnTimeChangedListener {
     /*
      * 알람관련 맴버 변수
      */
-    // 알람 메니저
+    // 알람 매니저
     private AlarmManager mManager;
     // 설정 일시
     private GregorianCalendar mCalendar;
@@ -29,8 +29,12 @@ public class Alram extends Activity
     private TimePicker mTime;
 
     private long nowTime;
+
+    Context context;
+    PendingIntent pendingIntent;
+
     /*
-     * 통지 관련 맴버 변수
+     * 통지 관련 멤버 변수
      */
     private NotificationManager mNotification;
 
@@ -47,17 +51,28 @@ public class Alram extends Activity
         //셋 버튼, 리셋버튼의 리스너를 등록
         nowTime = mCalendar.getTimeInMillis();
 
+
+
+        final Intent my_intent = new Intent(this.context, Alarm.class);
         setContentView(R.layout.activity_alarm);
         Button b = (Button)findViewById(R.id.set);
         b.setOnClickListener (new View.OnClickListener() {
             public void onClick (View v) {
+                Toast.makeText(Alarm.this, "알람이 설정 되었습니다!", Toast.LENGTH_SHORT).show();
                 setAlarm();
             }
         });
         b = (Button)findViewById(R.id.reset);
         b.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                resetAlarm();
+                Toast.makeText(Alarm.this, "알람이 초기화 되었습니다!", Toast.LENGTH_SHORT).show();
+                mManager.cancel(pendingIntent);
+
+                my_intent.putExtra("state", "alarm off");
+
+                sendBroadcast(my_intent);
+
+                //resetAlarm();
             }
         });
         //일시 설정 클래스로 현재 시각을 설정
@@ -72,12 +87,12 @@ public class Alram extends Activity
     //알람의 설정
     private void setAlarm() {
         if(CONTEXT_IGNORE_SECURITY >= mCalendar.getTimeInMillis()){
-            Toast.makeText(Alram.this, "입력한 날짜는 현재 날짜보다 이전입니다.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alarm.this, "입력한 날짜는 현재 날짜보다 이전입니다.", Toast.LENGTH_SHORT).show();
             return;
         }
 
-        Intent intent = new Intent(getApplicationContext(), AlramReceiver.class);
-        PendingIntent sender = PendingIntent.getBroadcast(Alram.this, 0, intent, 0);
+        Intent intent = new Intent(getApplicationContext(), AlarmReceiver.class);
+        PendingIntent sender = PendingIntent.getBroadcast(Alarm.this, 0, intent, 0);
 
         AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
         am.setRepeating(AlarmManager.RTC_WAKEUP, mCalendar.getTimeInMillis(), 0, sender);
@@ -85,12 +100,12 @@ public class Alram extends Activity
     }
 
     //알람의 해제
-    private void resetAlarm() {
+    /*private void resetAlarm() {
         mManager.cancel(pendingIntent());
-    }
+    }*/
     //알람의 설정 시각에 발생하는 인텐트 작성
     private PendingIntent pendingIntent() {
-        Intent i = new Intent(getApplicationContext(), Alram.class);
+        Intent i = new Intent(getApplicationContext(), Alarm.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, i, 0);
         return pi;
     }
@@ -101,7 +116,7 @@ public class Alram extends Activity
     }
     //시각 설정 클래스의 상태변화 리스너
     public void onTimeChanged (TimePicker view, int hourOfDay, int minute) {
-       mCalendar.set (mDate.getYear(), mDate.getMonth(), mDate.getDayOfMonth(), hourOfDay, minute);
+        mCalendar.set (mDate.getYear(), mDate.getMonth(), mDate.getDayOfMonth(), hourOfDay, minute);
     }
 }
 

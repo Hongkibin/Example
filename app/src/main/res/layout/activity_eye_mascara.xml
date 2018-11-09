@@ -17,6 +17,7 @@
         android:layout_marginRight="48dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView59" />
@@ -30,6 +31,7 @@
         android:layout_marginRight="48dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView57" />
 
@@ -42,6 +44,7 @@
         android:layout_marginRight="48dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView55" />
 
@@ -56,6 +59,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toStartOf="@+id/button47"
         app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,6 +99,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button63"
         app:layout_constraintHorizontal_bias="0.367"
@@ -154,6 +159,7 @@
         android:text="브로우"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
+        android:fontFamily="@font/baedal"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
@@ -236,6 +242,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toStartOf="@+id/button55"
         app:layout_constraintHorizontal_bias="0.375"
         app:layout_constraintStart_toStartOf="parent"

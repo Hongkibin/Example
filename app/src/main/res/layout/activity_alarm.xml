@@ -8,14 +8,8 @@
     android:datePickerMode="spinner"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".Alram"
+    tools:context=".Alarm"
     tools:layout_editor_absoluteY="25dp">
-
-    <!-- Date -->
-
-    <!-- Time -->
-
-    <!-- Button -->
 
 
     <TimePicker
@@ -23,34 +17,20 @@
         android:layout_width="250dp"
         android:layout_height="192dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
+        android:headerBackground="@android:color/holo_orange_light"
         android:timePickerMode="spinner"
-        app:layout_constraintBottom_toTopOf="@+id/text_view"
+        android:fontFamily="@font/baedal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date_picker"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/date_picker" />
 
     <Button
         android:id="@+id/reset"
         android:layout_width="66dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:text="reset"
-        app:layout_constraintBottom_toTopOf="@+id/text_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date_picker"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/set"
-        android:layout_width="63dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -59,13 +39,27 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:text="set"
-        app:layout_constraintBottom_toTopOf="@+id/text_view"
-        app:layout_constraintEnd_toStartOf="@+id/reset"
-        app:layout_constraintHorizontal_bias="0.347"
+        android:fontFamily="@font/baedal"
+        android:text="종료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/set"
+        app:layout_constraintTop_toBottomOf="@+id/date_picker" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/baedal"
+        android:text="설정"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/time_picker"
-        app:layout_constraintTop_toBottomOf="@+id/date_picker"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/date_picker" />
 
     <DatePicker
         android:id="@+id/date_picker"
@@ -75,10 +69,12 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:layout_weight="1"
+        android:headerBackground="@android:color/holo_orange_light"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.163"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,16 +82,19 @@
     <TextView
         android:id="@+id/text_view"
         android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:layout_marginBottom="620dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baedal"
         android:text=" **원하는 날짜 알람을 설정하세요** "
+        android:textStyle="bold"
         android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/date_picker"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

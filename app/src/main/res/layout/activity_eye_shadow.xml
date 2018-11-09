@@ -127,6 +127,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
         style="?android:attr/borderlessButtonStyle"/>
@@ -139,6 +140,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintStart_toEndOf="@+id/button48"
         app:layout_constraintTop_toBottomOf="@+id/imageView19"
         style="?android:attr/borderlessButtonStyle"/>
@@ -153,6 +155,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button49"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
@@ -211,6 +214,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView46"
         style="?android:attr/borderlessButtonStyle"/>
@@ -223,6 +227,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintStart_toEndOf="@+id/button51"
         app:layout_constraintTop_toBottomOf="@+id/imageView47"
         style="?android:attr/borderlessButtonStyle"/>
@@ -237,6 +242,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button52"
         app:layout_constraintTop_toBottomOf="@+id/imageView48"
@@ -267,6 +273,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -10,7 +10,7 @@ import android.widget.*;
 import android.support.v4.app.NotificationCompat;
 
 
-public class AlramReceiver extends BroadcastReceiver {
+public class AlarmReceiver extends BroadcastReceiver {
 
     private int YOURAPP_NOTIFICATION_ID;
 
@@ -24,7 +24,7 @@ public class AlramReceiver extends BroadcastReceiver {
 
     private void showNotification(Context context, int statusBarIconID,
                                   String statusBarTextID, String detailedTextID) {
-        Intent contentIntent = new Intent(context, Alram.class);
+        Intent contentIntent = new Intent(context, Alarm.class);
         PendingIntent theappIntent =
                 PendingIntent.getActivity(context, 0, contentIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 

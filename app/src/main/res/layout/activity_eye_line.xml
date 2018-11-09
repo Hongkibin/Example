@@ -24,6 +24,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toStartOf="@+id/button22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
@@ -183,6 +184,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toStartOf="@+id/button57"
         app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,6 +199,7 @@
         android:layout_marginRight="60dp"
         android:layout_marginTop="16dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView16"
         style="?android:attr/borderlessButtonStyle"/>
@@ -209,6 +212,7 @@
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toTopOf="@+id/imageView51"
         app:layout_constraintStart_toStartOf="parent"
         style="?android:attr/borderlessButtonStyle"/>
@@ -223,6 +227,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toTopOf="@+id/imageView53"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.55"
@@ -237,6 +242,7 @@
         android:layout_marginLeft="56dp"
         android:layout_marginStart="56dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         style="?android:attr/borderlessButtonStyle"/>
@@ -251,6 +257,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="8dp"
         android:text="Button"
+        android:fontFamily="@font/baedal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.67"
