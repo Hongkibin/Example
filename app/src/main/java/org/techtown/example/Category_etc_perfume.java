@@ -1,11 +1,13 @@
 package org.techtown.example;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.androidquery.AQuery;
 
@@ -80,5 +82,89 @@ public class Category_etc_perfume extends AppCompatActivity {
 
         aq86 = new AQuery(this);
         aq86.id(R.id.imageView105).image("http://gdimg.gmarket.co.kr/616357622/still/600?ver=0");
+//97-105
+        final ImageView imageView97 =  (ImageView) findViewById(R.id.imageView97);
+        imageView97.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EA%B2%90%EC%A1%B0+%ED%94%8C%EB%9D%BC%EC%9B%8C+%EB%B0%94%EC%9D%B4+%EA%B2%90%EC%A1%B0+%EC%98%A4%EB%93%9C+%EB%9A%9C%EC%99%88%EB%A0%9B&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+        final ImageView imageView98 =  (ImageView) findViewById(R.id.imageView98);
+        imageView98.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%81%8C%EB%A1%9C%EC%97%90+%EB%A1%9C%EC%A6%88+%EB%93%9C+%EB%81%8C%EB%A1%9C%EC%97%90+%EC%98%A4%EB%93%9C+%EB%9A%9C%EC%99%88%EB%A0%9B&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+        final ImageView imageView99 =  (ImageView) findViewById(R.id.imageView99);
+        imageView99.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%8D%94%EB%B0%94%EB%94%94%EC%83%B5+%ED%99%94%EC%9D%B4%ED%8A%B8+%EB%A8%B8%EC%8A%A4%ED%81%AC+%EC%98%A4%EB%93%9C+%ED%8D%BC%ED%93%B8&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+        final ImageView imageView100 =  (ImageView) findViewById(R.id.imageView100);
+        imageView100.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("디올 미스 디올 블루밍 부케 오드 뚜왈렛"));
+                startActivity(intent);
+
+            }
+        });
+        final ImageView imageView101 =  (ImageView) findViewById(R.id.imageView101);
+        imageView101.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%9E%91%EB%B0%A9+%EC%97%90%EB%81%8C%EB%9D%BC+%EB%93%9C+%EC%95%84%EB%A5%B4%ED%8E%98%EC%A5%AC&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+        final ImageView imageView102 =  (ImageView) findViewById(R.id.imageView102);
+        imageView102.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%AA%A8%EC%8A%A4%ED%82%A4%EB%85%B8+%ED%94%84%EB%A0%88%EC%89%AC&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+        final ImageView imageView103 =  (ImageView) findViewById(R.id.imageView103);
+        imageView103.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EC%83%A4%EB%84%AC+%EC%83%B9%EC%8A%A4+%EC%98%A4+%EB%95%85%EB%93%9C%EB%A5%B4+%EC%98%A4%EB%93%9C+%EB%9A%9C%EC%99%88%EB%A0%9B&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView104 =  (ImageView) findViewById(R.id.imageView104);
+        imageView104.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EC%A1%B0%EB%A7%90%EB%A1%A0+%ED%96%A5%EC%88%98&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView105 =  (ImageView) findViewById(R.id.imageView105);
+        imageView105.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%ED%95%84%EB%A1%9C%EC%86%8C%ED%94%BC+%EC%96%B4%EB%A9%94%EC%9D%B4%EC%A7%95+%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%8A%A4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
     }
 }

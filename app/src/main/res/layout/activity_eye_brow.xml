@@ -10,6 +10,7 @@
 
     <Button
         android:id="@+id/button27"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
@@ -18,35 +19,34 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="스킨푸드초코아이브로우파우더"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button26"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <Button
         android:id="@+id/button40"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
-        android:layout_height="53dp"
+        android:layout_height="68dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="에뛰드하우스 청순 거짓 브라우"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <Button
         android:id="@+id/button41"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="115dp"
-        android:layout_height="53dp"
+        android:layout_width="129dp"
+        android:layout_height="69dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="우드버리 하드텍스처 아이브로우 "
         app:layout_constraintStart_toEndOf="@+id/button40"
         app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
@@ -61,7 +61,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="클리오 킬브로우 오토"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toEndOf="@+id/button41"
@@ -69,32 +69,31 @@
 
     <Button
         android:id="@+id/button43"
-        android:layout_width="115dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="147dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="키스미 헤비로테이션 컬러링"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button26"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="슈에무라 하드 포뮬라 하드"
         app:layout_constraintStart_toEndOf="@+id/button25"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
         android:id="@+id/button21"
@@ -254,7 +253,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button41"
-        app:layout_constraintVertical_bias="0.428"
+        app:layout_constraintVertical_bias="0.642"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <Button
@@ -266,7 +265,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="삐아 라스트 펜슬"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

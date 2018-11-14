@@ -48,12 +48,6 @@
         </service>
 
 
-        <service
-            android:name=".RingtonePlayingService"
-            android:enabled="true">
-
-        </service>
-
 
 
 
@@ -84,6 +78,7 @@
         <activity android:name=".Alarm" />
 <receiver android:name=".AlarmReceiver">
     </receiver>
+
     </application>
 
 </manifest>

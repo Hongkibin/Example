@@ -9,29 +9,29 @@
 
     <Button
         android:id="@+id/button103"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
         android:fontFamily="@font/baedal"
+        android:text="겐조 플라워 바이"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView97"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView97" />
 
     <Button
         android:id="@+id/button104"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="끌로에 오드 뚜왈렛"
         app:layout_constraintStart_toEndOf="@+id/button103"
-        app:layout_constraintTop_toBottomOf="@+id/imageView98"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView98" />
 
     <Button
         android:id="@+id/button106"
@@ -42,7 +42,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="디올 미스 디올 블루밍 부케"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView100" />
 
@@ -57,7 +57,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="랑방 에끌라 드 아르페쥬"
         app:layout_constraintEnd_toStartOf="@+id/button108"
         app:layout_constraintStart_toEndOf="@+id/button106"
         app:layout_constraintTop_toBottomOf="@+id/imageView101" />
@@ -71,12 +71,13 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="모스키노 프레쉬"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView102" />
 
     <Button
         android:id="@+id/button109"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
@@ -84,14 +85,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="샤넬 샹스 오 땅드르"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView103"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView103" />
 
     <Button
         android:id="@+id/button110"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
@@ -101,27 +102,26 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="조말론 향수"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button111"
         app:layout_constraintStart_toEndOf="@+id/button109"
-        app:layout_constraintTop_toBottomOf="@+id/imageView104"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView104" />
 
     <Button
         android:id="@+id/button111"
-        android:layout_width="115dp"
-        android:layout_height="53dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="130dp"
+        android:layout_height="67dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="필로소피 어메이징 그레이스"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView105"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView105" />
 
     <ImageView
         android:id="@+id/imageView97"
@@ -266,8 +266,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton2"
         android:background="@drawable/rounded" />
+
     <Button
         android:id="@+id/button105"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
@@ -276,12 +278,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="더바디샵 화이트 머스크"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.764"
         app:layout_constraintStart_toEndOf="@+id/button104"
-        app:layout_constraintTop_toBottomOf="@+id/imageView99"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView99" />
 
     <ImageButton
         android:id="@+id/imageButton2"

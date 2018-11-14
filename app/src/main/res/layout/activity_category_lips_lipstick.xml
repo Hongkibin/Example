@@ -124,7 +124,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="에뛰드 디어 달링 워터 젤 틴트"
+        android:text="나스 벨벳 매트 립 펜슬"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 
@@ -140,7 +140,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="에뛰드 매트 시크 립라커"
+        android:text="디올 어딕트 립 글로우"
         app:layout_constraintEnd_toStartOf="@+id/button35"
         app:layout_constraintStart_toEndOf="@+id/button33"
         app:layout_constraintTop_toBottomOf="@+id/imageView30" />
@@ -155,7 +155,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="입생로랑 베르니 아 레브르"
+        android:text="라네즈 투톤 틴트 립 바 "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView31" />
 
@@ -169,7 +169,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="조르지오아르마니 립 마에스트로"
+        android:text="마몽드 크리미틴트 컬러밤 인텐스  "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView32"
         tools:ignore="MissingConstraints" />
@@ -186,7 +186,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="토니모리 퍼펙트 립스 쇼킹 립 "
+        android:text="맥 립스틱"
         app:layout_constraintEnd_toStartOf="@+id/button38"
         app:layout_constraintHorizontal_bias="0.653"
         app:layout_constraintStart_toEndOf="@+id/button36"
@@ -202,7 +202,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="투쿨포스쿨 글로시틴트  "
+        android:text="슈에무라 루즈 언리미티드 슈프림마뜨"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView34" />
 
@@ -217,7 +217,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="삐아 라스트 벨벳 립 틴트"
+        android:text="입생로랑 루쥬 볼륍떼 샤인 "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView35" />
@@ -235,7 +235,7 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="페리페라 잉크더에어리벨벳"
+        android:text="클리오 루즈 힐 "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button29"
         app:layout_constraintStart_toEndOf="@+id/button39"
@@ -251,7 +251,7 @@
         android:layout_marginRight="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="페리페라 슈가 글로우 틴트"
+        android:text="클리오 매드 매트 립"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

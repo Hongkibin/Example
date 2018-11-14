@@ -67,7 +67,7 @@ public class Category extends AppCompatActivity {
         button10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent28 = new Intent(getApplicationContext(), MenuActivity.class);
+                Intent intent28 = new Intent(getApplicationContext(), MainActivity.class);
                 startActivityForResult(intent28, 101);
             }
         });

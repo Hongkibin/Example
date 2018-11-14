@@ -23,21 +23,22 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         FirebaseMessaging.getInstance().subscribeToTopic("news");
-         FirebaseInstanceId.getInstance().getToken();
-//여기 뭐냐 그겁니다 마이페이지 도전이요
+        FirebaseMessaging.getInstance().subscribeToTopic("news");
+        FirebaseInstanceId.getInstance().getToken();
+
+        //php 연동을 위한 변수
         final EditText idText = (EditText) findViewById(R.id.idText);
         final EditText passwordText = (EditText) findViewById(R.id.passwordText);
         final Button loginButton = (Button) findViewById(R.id.loginButton);
         final TextView registerButton = (TextView) findViewById(R.id.registerButton);
 
-        registerButton.setOnClickListener(new View.OnClickListener() {
+        //OnClickListener를 이용해 회원가입 창으로 이동
+               registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent registerIntent = new Intent(MainActivity.this, Sign_up.class);
@@ -53,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 101);
             }
         });
-
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                                 intent.putExtra("userID",userID);
                                 //intent.putExtra("userPassword",userPassword);
                                 MainActivity.this.startActivity(intent);
-
                             }
                             else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -94,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
                 queue.add(loginRequest);
             }
         });
-
     }
 }
 

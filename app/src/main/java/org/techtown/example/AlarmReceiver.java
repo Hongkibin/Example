@@ -12,11 +12,11 @@ import android.support.v4.app.NotificationCompat;
 
 public class AlarmReceiver extends BroadcastReceiver {
 
-    private int YOURAPP_NOTIFICATION_ID;
+    //private int Example_NOTIFICATION_ID;
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, R.string.app_name, Toast.LENGTH_SHORT).show();
+        Toast.makeText(context,"유통기한을 확인하세요!", Toast.LENGTH_SHORT).show();
 
         showNotification(context, R.drawable.icon,
                 "유통기한 확인", "유통기한을 확인하세요");
@@ -25,18 +25,16 @@ public class AlarmReceiver extends BroadcastReceiver {
     private void showNotification(Context context, int statusBarIconID,
                                   String statusBarTextID, String detailedTextID) {
         Intent contentIntent = new Intent(context, Alarm.class);
-        PendingIntent theappIntent =
+     /*   PendingIntent theappIntent =
                 PendingIntent.getActivity(context, 0, contentIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+*/
 
 
-        CharSequence from = "알람";
-        CharSequence message = "무슨짓을 해야  알람이 꺼질까요?";
-
-        Notification notif = new Notification(statusBarIconID, null, System.currentTimeMillis());
+        Notification notif = new Notification(statusBarIconID, "유통기한을 확인하세요!!", System.currentTimeMillis());
         notif.sound = Uri.withAppendedPath(Audio.Media.INTERNAL_CONTENT_URI, "2");//ringURI;
         notif.flags = Notification.FLAG_INSISTENT;
         //notif.setLatestEventInfo(context, from, message, theappIntent);
-        notif.ledARGB = Color.GREEN;
+        notif.ledARGB = Color.YELLOW;
         NotificationManager nm = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
 
         nm.notify(1234, notif);

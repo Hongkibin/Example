@@ -17,43 +17,16 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-    /*    EditText idText = (EditText) findViewById(R.id.idText);
 
-        Intent intent = getIntent();
-        String userID = intent.getStringExtra("userID");
-        Toast.makeText(MenuActivity.this, "환영합니다. "+userID+" 님!", Toast.LENGTH_SHORT).show();
-
-
-        if(userID == null){
-            Toast.makeText(MenuActivity.this, "비회원으로 접속중", Toast.LENGTH_SHORT).show();
-        }*/
-
-       Button button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener()
-
-    {
-        @Override
-        public void onClick (View v){
-        Intent intent = new Intent();
-        intent.putExtra("name", "success");
-
-        setResult(Activity.RESULT_OK, intent);
-
-        finish();
-    }
-    });
-
-      /*  Button button9 = (Button) findViewById(R.id.button9);
-        button9.setOnClickListener(new View.OnClickListener()
-
-        {
+        Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View v){
-                Intent intent1 = new Intent(getApplicationContext(),Mypage.class);
-                startActivity(intent1);
-
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivityForResult(intent, 101);
             }
-        });*/
+        });
+
         ImageButton imageButton2 =(ImageButton) findViewById(R.id.imageButton2);
         imageButton2.setOnClickListener(new View.OnClickListener()
 

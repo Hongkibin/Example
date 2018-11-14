@@ -1,11 +1,13 @@
 package org.techtown.example;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.androidquery.AQuery;
 
@@ -83,5 +85,76 @@ public class Category_lips_lipbam extends AppCompatActivity {
         aq24.id(R.id.imageView44).image("https://shopping-phinf.pstatic.net/main_4143495/4143495608.20170801093445.jpg?type=f300");
 
 
+        //38-44
+
+        final ImageView imageView38 =  (ImageView) findViewById(R.id.imageView38);
+        imageView38.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%8B%88%EB%B2%A0%EC%95%84+%EB%AA%A8%EC%9D%B4%EC%8A%A4%EC%B2%98+%EC%BC%80%EC%96%B4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView39 =  (ImageView) findViewById(R.id.imageView39);
+        imageView39.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%8B%88%EB%B2%A0%EC%95%84+%EC%97%90%EC%84%BC%EC%85%9C+&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView40 =  (ImageView) findViewById(R.id.imageView40);
+        imageView40.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%B0%94%EC%84%B8%EB%A6%B0+%EB%A6%BD%EB%B0%A4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView41 =  (ImageView) findViewById(R.id.imageView41);
+        imageView41.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%B0%94%EC%9D%B4%EC%98%A4%EB%8D%94%EB%A7%88+%EC%95%84%ED%86%A0%EB%8D%A4+%EB%A6%BD%EB%B0%A4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView42 =  (ImageView) findViewById(R.id.imageView42);
+        imageView42.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EC%9C%A0%EB%A6%AC%EC%95%84%EC%A5%AC+%EB%A6%BD%EB%B0%A4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView43 =  (ImageView) findViewById(R.id.imageView43);
+        imageView43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%ED%82%A4%EC%97%98+%EB%A6%BD%EB%B0%A4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView44 =  (ImageView) findViewById(R.id.imageView44);
+        imageView44.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%ED%9E%88%EB%A7%90%EB%9D%BC%EC%95%BC+%EB%A6%BD%EB%B0%A4&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
     }
 }

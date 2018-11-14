@@ -17,7 +17,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="메이블린뉴욕핏미 "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView64" />
 
@@ -32,7 +32,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="아리따움 올데이 래스팅"
         app:layout_constraintEnd_toStartOf="@+id/button69"
         app:layout_constraintStart_toEndOf="@+id/button67"
         app:layout_constraintTop_toBottomOf="@+id/imageView65" />
@@ -48,7 +48,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="루나 롱래스팅"
         app:layout_constraintEnd_toStartOf="@+id/button66"
         app:layout_constraintStart_toEndOf="@+id/button64"
         app:layout_constraintTop_toBottomOf="@+id/imageView62" />
@@ -62,7 +62,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="마몽드 올 스테이"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView63" />
 
@@ -189,8 +189,8 @@
         android:id="@+id/imageView61"
         android:layout_width="115dp"
         android:layout_height="115dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:background="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
@@ -220,7 +220,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="로레알파리 트루매치 리퀴드"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView61" />
 
@@ -233,7 +233,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="아이오페 퍼펙트 스킨"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView66" />
 
@@ -247,7 +247,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="에스쁘아 프로테일러"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView67" />
@@ -255,14 +255,14 @@
     <Button
         android:id="@+id/button72"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="115dp"
+        android:layout_width="131dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="투쿨포스쿨 드땅뜨 리퀴드커버"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView69" />
@@ -279,7 +279,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/baedal"
-        android:text="Button"
+        android:text="지베르니 밀착  파운데이션"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button72"
         app:layout_constraintStart_toEndOf="@+id/button70"

@@ -103,7 +103,7 @@
     <Button
         android:id="@+id/button33"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="115dp"
+        android:layout_width="122dp"
         android:layout_height="53dp"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
@@ -111,12 +111,13 @@
         android:autoText="true"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="에뛰드 디어 달링 워터 젤 틴트"
+        android:text="니베아 모이스처 케어"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView38" />
 
     <Button
         android:id="@+id/button34"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="16dp"
@@ -124,13 +125,13 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="에뛰드 매트 시크 립라커"
+        android:text="니베아 에센셜  "
         app:layout_constraintStart_toEndOf="@+id/button33"
-        app:layout_constraintTop_toBottomOf="@+id/imageView39"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
 
     <Button
         android:id="@+id/button35"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
@@ -140,11 +141,10 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="입생로랑 베르니 아 레브르"
+        android:text="바세린 립밤  "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button34"
-        app:layout_constraintTop_toBottomOf="@+id/imageView40"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView40" />
 
     <Button
         android:id="@+id/button36"
@@ -157,7 +157,7 @@
         android:layout_marginTop="12dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="조르지오아르마니 립 마에스트로"
+        android:text="바이오더마 아토덤  립밤  "
         app:layout_constraintBottom_toTopOf="@+id/imageView44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView41"
@@ -165,6 +165,7 @@
 
     <Button
         android:id="@+id/button37"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginLeft="24dp"
@@ -172,10 +173,9 @@
         android:layout_marginTop="12dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="토니모리 퍼펙트 립스 쇼킹 립 "
+        android:text="유리아쥬 립밤"
         app:layout_constraintStart_toEndOf="@+id/button36"
-        app:layout_constraintTop_toBottomOf="@+id/imageView42"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView42" />
 
     <Button
         android:id="@+id/button38"
@@ -190,7 +190,7 @@
         android:layout_marginTop="12dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="투쿨포스쿨 글로시틴트  "
+        android:text="키엘 립밤"
         app:layout_constraintBottom_toTopOf="@+id/imageView44"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button37"
@@ -198,6 +198,7 @@
 
     <Button
         android:id="@+id/button39"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="115dp"
         android:layout_height="53dp"
         android:layout_marginBottom="8dp"
@@ -207,11 +208,10 @@
         android:layout_marginStart="8dp"
         android:background="@android:color/background_light"
         android:fontFamily="@font/baedal"
-        android:text="삐아 라스트 벨벳 립 틴트"
+        android:text="히말라야 립밤 "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        style="?android:attr/borderlessButtonStyle"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button30"

@@ -1,11 +1,13 @@
 package org.techtown.example;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import com.androidquery.AQuery;
 
@@ -89,5 +91,74 @@ public class Category_eye_shadow extends AppCompatActivity{
         aq38 = new AQuery(this);
         aq38.id(R.id.imageView49).image("https://img1.memebox.com/1febc85i/contents/img/memeboxProductItem/20171027122235_ff7a033af4bc84a3ff9f0de5be3d782f.jpg");
 
+        final ImageView imageView18=  (ImageView) findViewById(R.id.imageView18);
+        imageView18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%82%98%EC%8A%A4+%EC%8B%B1%EA%B8%80+%EC%95%84%EC%9D%B4%EC%84%80%EB%8F%84%EC%9A%B0&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView19 =  (ImageView) findViewById(R.id.imageView19);
+        imageView19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%A7%A5+%EB%8C%80%EC%A6%90+%EC%84%80%EB%8F%84%EC%9A%B0&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView45 =  (ImageView) findViewById(R.id.imageView45);
+        imageView45.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EB%AF%B8%EC%83%A4+%EB%AA%A8%EB%8D%98+%EC%84%80%EB%8F%84%EC%9A%B0&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView46 =  (ImageView) findViewById(R.id.imageView46);
+        imageView46.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EC%95%84%EB%A6%AC%EB%94%B0%EC%9B%80+%EB%AA%A8%EB%85%B8+%EC%95%84%EC%9D%B4%EC%A6%88&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView47 =  (ImageView) findViewById(R.id.imageView47);
+        imageView47.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%EC%97%90%EB%9B%B0%EB%93%9C+%EB%A3%A9+%EC%95%B3+%EB%A7%88%EC%9D%B4+%EC%95%84%EC%9D%B4%EC%A6%88&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView48 =  (ImageView) findViewById(R.id.imageView48);
+        imageView48.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%ED%81%B4%EB%A6%AC%EC%98%A4+%ED%94%84%EB%A1%9C%EC%8B%B1%EA%B8%80%EC%84%80%EB%8F%84%EC%9A%B0&cat_id=&frm=NVSHATC#"));
+                startActivity(intent);
+
+            }
+        });
+
+        final ImageView imageView49 =  (ImageView) findViewById(R.id.imageView49);
+        imageView49.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://search.shopping.naver.com/search/all.nhn?query=%ED%8E%98%EB%A6%AC%ED%8E%98%EB%9D%BC+%EC%9E%89%ED%81%AC%ED%94%BC%ED%8C%85%EC%84%80%EB%8F%84%EC%9A%B0&cat_id=&frm=NVSHATC"));
+                startActivity(intent);
+
+            }
+        });
         }
         }
